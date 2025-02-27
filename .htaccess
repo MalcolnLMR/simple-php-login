@@ -1,0 +1,11 @@
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+
+RewriteEngine On
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^login\.php$ - [L]
+RewriteRule ^logout\.php$ - [L]
+RewriteRule ^register\.php$ - [L]
+RewriteRule ^config/ - [F]
+
+#RewriteRule ^.*$ index.php [L]
